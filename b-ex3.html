@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic exercise 3</title>
+</head>
+<body>
+    <script>
+        function crystalGazer(number_children,partners_name,location,job_title) {
+           if (typeof(number_children) != "number") {return("error")}
+           if (typeof(partners_name) != "string") {return("error")}
+           if (typeof(location) != "string") {return("error")}
+           if (typeof(job_title) != "string") {return("error")}
+           return(`You will be a ${job_title} in ${location} and married to ${partners_name} with ${number_children}.`)
+        }
+        console.log(crystalGazer("keine","Judy","Mars city","Rover"));
+        console.log(crystalGazer("keine","Judy","Mars city"));
+        console.log(crystalGazer(4,"Judy","Mars city","Rover"));
+    </script>
+</body>
+</html>
