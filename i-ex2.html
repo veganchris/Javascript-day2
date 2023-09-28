@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intermediate exercise 2</title>
+</head>
+
+<body>
+    <script>
+        function grades(math, physics, english) {
+            if (typeof (math) != "number" ||
+                typeof (physics) != "number" ||
+                typeof (english) != "number") {
+                return ("Error Error");
+            }
+            else {
+                let sum = math + physics + english;
+                return (sum + " " + sum / 3);
+            }
+        }
+        let result = grades(3,4,5).split(" ");
+                console.log("Sum: ", result[0], "Average: ", result[1]);
+  </script>
+</body>
+
+</html>
