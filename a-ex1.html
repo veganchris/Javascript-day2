@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>advanced exercise 1</title>
+</head>
+
+<body>
+    <script>
+        function convMins(mins) {
+            let result = new Array(3);
+            result[0] = Math.floor(mins / (24 * 60));
+            result[2] = mins - (result[0] * 24 * 60);
+            result[1] = Math.floor(result[2] / 60);
+            result[2] = result[2] - result[1] * 60;
+            return (result);
+        }
+        let minutes = 200;
+        let result = convMins(minutes);
+        console.log(minutes + " minutes = " + result[0] + " day(s) " + result[1] + " hour(s) " + result[2] + " minute(s)");
+    </script>
+</body>
+
+</html>
